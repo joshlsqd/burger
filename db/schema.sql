@@ -1,14 +1,14 @@
-Drop database burgers_db;
 
-CREATE DATABASE burgers_db;
+use hm3sftlcpyb2o0ng;
 
-USE burgers_db;
+drop table burgers;
 
 CREATE TABLE burgers
 (
-	id int NOT NULL AUTO_INCREMENT,
-	burger_name varchar(255) NOT NULL,
+	id INT AUTO_INCREMENT NOT NULL,
+	burger_name VARCHAR(255) NOT NULL,
 	devoured BOOLEAN NOT NULL Default false,
+    createdAt TIMESTAMP NOT NULL default current_timestamp,
 	PRIMARY KEY (id)
 );
 
